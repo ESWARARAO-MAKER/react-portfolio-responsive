@@ -66,6 +66,7 @@
     left: 0px;
     position: absolute;
     background-color: white;
+    color: black;
 }
 .link:hover{
     text-decoration: underline;
