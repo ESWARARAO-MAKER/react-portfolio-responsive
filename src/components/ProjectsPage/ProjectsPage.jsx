@@ -6,7 +6,7 @@ const ProjectsPage = () => {
         <div className="projects">
             <div className="projects-page">
                 <div className="project-img">
-                    <img src= "/image/img/p1.jpg" alt="img" className="img"/>
+                    <img src= "../../../public/image/img/p1.jpg" alt="img" className="img"/>
                 </div>
                 <div className="projects-desc">
                     <span>Projects</span>
