@@ -15,14 +15,13 @@
     align-items: center;
     justify-content: space-between;
     color: grey;
-    position: relative;
 }
 .link{
     text-decoration: none;
     cursor: pointer;
     opacity: 0;
     animation: slideRight .5s ease-in forwards;
-    animation-delay: calc(.4s*var(--i));
+    animation-delay: calc(.2s*var(--i));
 }
 .link>span{
     opacity: 0;
@@ -43,7 +42,6 @@
 }
 .nav-items{
     display: flex;
-    position: relative;
 }
 .nav-links{
     display: flex;
@@ -58,13 +56,14 @@
 }
 .nav-mobile-view{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    top: calc(100vh-70px);
+    width: 100vw;
+    top: 70px;
     padding: 10px;
     gap: 10px;
-    right: 100%;
+    left: 0px;
     position: absolute;
     background-color: white;
 }
