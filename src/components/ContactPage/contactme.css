@@ -1,0 +1,142 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../public/image/img/contact.jpg");
+    background-size: cover;
+}
+.con-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    height: calc(100vh-70px);
+    max-width: 1024px;
+}
+.con-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-img{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    opacity: 0;
+    animation: scaleUp .5s ease forwards;
+    animation-delay: 1s;
+}
+.contact-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact-desc>span{
+    font-weight: 800;
+    font-size: 22px;
+}
+.contact-desc>p>span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: black;
+}
+.con-social{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    animation: slideUp .5s ease backwards;
+    animation-delay: calc(.8s*var(--i));
+}
+.con-social:hover{
+    cursor: pointer;
+    scale: 1.2;
+}
+.con-btn{
+    height: 40px;
+    width: 120px;
+    font-size: 14px;
+    border: 1px solid green;
+    border-radius: 5px;
+    color: green;
+    padding: 5px;
+    margin: 10px;
+    background-color: transparent;
+    font-weight: 800;
+    opacity: 0;
+    animation: slideUp .5s ease forwards;
+    animation-delay: .7s;
+}
+.con-btn:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+@media screen and (max-width:767px) {
+    .con-container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    .contact-desc>span{
+        font-weight: 800;
+        font-size: 18px;
+    }
+    .contact-img{
+        width: 250px;
+        height: 250px;
+    }
+    .contact-desc>p{
+        font-size: 12px;
+    }
+    .contact-desc>p>span{
+        font-size: 16px;
+    }
+    .con-social{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .con-btn{
+        height: 40px;
+        width: 120px;
+        font-size: 14px;
+        border: 1px solid green;
+        border-radius: 5px;
+        color: green;
+        background-color: transparent;
+        padding: 5px;
+        margin: 10px;
+    }
+}
+
+@keyframes scaleUp {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes slideUp {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

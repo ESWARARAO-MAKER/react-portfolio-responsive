@@ -1,0 +1,138 @@
+.education{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.edu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh-70px);
+    width: 100%;
+    background-color: antiquewhite;
+    margin: 0px;
+    padding: 30px;
+}
+.edu-image{
+    width: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edu-img{
+    height: 50%;
+    width: 70%;
+    animation: scaleUp .5s ease-in backwards;
+}
+.edu-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.edu-desc>span{
+    opacity: 0;
+    animation: slideBelow .5s ease forwards;
+    animation-delay: calc(.5s*var(--i));
+}
+.heading{
+    font-weight: 800;
+    font-size: 24px;
+}
+.desktop{
+    font-size: 40px;
+}
+.edu-text{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.e-con{
+    background-image: url("../../../public/image/img/edubg.jpg");
+    margin: 0px;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1024px;
+}
+.edu-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    height: 180px;
+    gap: 0;
+    border-radius: 10px;
+    animation: slideRight .2s ease backwards;
+    animation-delay: calc(.7s*var(--i));
+}
+.edu-card>span{
+    font-size: 24px;
+    font-weight: 800;
+}
+.para{
+    color: green;
+}
+@media screen and (max-width :767px) {
+    .edu-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+    .edu-text{
+        font-size: 16px;
+        margin: 20px;
+    }
+    .edu-card{
+        height: 150px;
+        width: 70%;
+    }
+    .edu-card>span{
+        font-size: 16px;
+    }
+}
+@keyframes slideRight {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes slideBelow {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

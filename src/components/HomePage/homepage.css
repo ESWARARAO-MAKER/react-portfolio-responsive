@@ -1,0 +1,184 @@
+.home-page{
+    background-image: url('../../../public/image/img/homebg.png');
+    background-size: cover;
+    height: calc(100vh-70px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-desc{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.a{
+    animation: slideRight .2s ease backwards;
+    animation-delay: calc(.7s*var(--i));
+}
+.home-desc>span{
+    font-size: 24px;
+    font-weight: bold;
+}
+.home-img{
+    height: 80%;
+    width: 100%;
+    opacity: 0;
+    animation: scaleUp .4s ease forwards;
+    animation-delay: .9s;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.social-links>a{
+    opacity: 0;
+    animation: slideRight .5s ease-in forwards;
+    animation-delay: calc(.2s*var(--i));
+}
+.social{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.social:hover{
+    scale: 1.2;
+}
+.what-i-do-text{
+    font-size: 34px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: green;
+}
+.what-i-do-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.home-card{
+    height: 250px;
+    width: 350px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    opacity: 0;
+    animation: slideRight .2s ease-in forwards;
+    animation-delay: calc(.6s*var(--i));
+}
+.home-card>span{
+    font-weight: 800;
+    font-size: 22px;
+    color: blue;
+}
+.homeImg{
+    height: 40%;
+    width: 40%;
+}
+.home-btn{
+    height: 45px;
+    width: 130px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 2px;
+}
+.home-btn:hover{
+    scale: 1.2;
+}
+
+@media screen and (max-width : 767px) {
+    .home-page{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+        background-size: cover;
+    }
+    .home-card>span{
+        font-weight: 800;
+        font-size: 18px;
+        color: aqua;
+    }
+    .home-btn{
+        height: 40px;
+        width: 150px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid white;
+        color: white;
+        background-color: transparent;
+    }
+    .home-img{
+        height: 50%;
+        width: 70%;
+        object-fit: cover;
+    }
+    .home-desc{
+        margin: 20px;
+        gap: 10px;
+    }
+    .desc-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .what-i-do-text{
+        font-size: 18px;
+        font-weight: 800;
+        margin: 20px;
+        color: green;
+    }
+    .home-card{
+        height: 250px;
+        width: 300px;
+    }
+    .social{
+        font-size: 25px;
+    }
+}
+
+@keyframes scaleUp {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes slideRight {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
