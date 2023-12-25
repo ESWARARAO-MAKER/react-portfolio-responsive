@@ -5,7 +5,7 @@
     justify-content: center;
     background-image: url("../../../public/image/img/skillbg.jpg");
     background-size: cover;
-    height:90vh;
+    height:100%;
     margin-bottom: 10px;
 }
 .skillsSection{
@@ -13,6 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .skillsSection h2,p{
     text-align: center;

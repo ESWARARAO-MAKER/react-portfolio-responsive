@@ -8,7 +8,6 @@
     justify-content: center;
     align-items: center;
     height: calc(100vh-70px);
-    width: 100%;
     background-color: antiquewhite;
     margin: 0px;
     padding: 30px;
@@ -98,11 +97,16 @@
         margin: 20px;
     }
     .edu-card{
-        height: 150px;
+        height: 200px;
         width: 70%;
     }
     .edu-card>span{
         font-size: 16px;
+    }
+    .edu-img{
+        height: 100%;
+        width: 100%;
+        animation: scaleUp .5s ease-in backwards;
     }
 }
 @keyframes slideRight {
